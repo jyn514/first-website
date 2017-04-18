@@ -7,16 +7,16 @@
     <meta name="description" content="A simple website to develop my HTML and CSS skills. See README.md for more detail.">
 </head>
 <style>
-    body {
-    	column-count: 2;
-	    }
+	footer {
+	    display: block;
+	    height: 30px;
+	    width: 100%;
+	    
+	}
     figure {
-	    vertical-align: top;
 	    float: right;
-	    column-span: 1;
 	    }
     p {
-	    column-span: 1;
 	    font: "Verdana", "sans-serif"; 
 	    }
     h1 {
@@ -27,8 +27,13 @@
 </style>
 <body>
     <h1>Welcome!</h1>
+        <figure>
+            <img src='https://avatars0.githubusercontent.com/u/23638587?v=3&s=460' alt="Me! Hello, there :)" width=300px height=300px>
+            <figcaption>A picture of me, taken from my Linkedin profile.</figcaption>
+        </figure>
         <p>This page is still in development, but feel free to look around.</p>
     <h3>About me:</h3>
+
         <ul>
             <li><a href=https://www.linkedin.com/in/joshuayn title="Linkedin is a social networking site for business and careers.">My linkedin page</a>. I currently work a summer job in Tampa, FL, and I am going to college in the fall.</li>
             <li><a href=https://github.com/jyn514 title="Github is a repository for projects and code used by developers around the world.">My github page</a>, where this site is hosted under `first-website`. I have started several different projects, including
@@ -48,6 +53,9 @@
     	<li><a href=https://www.eff.org/https-everywhere>Automatic encryption</a> of any webpage that supports it, <br>     using the <em>https</em> protocol built into the web</li>
 	    <li><a href=https://www.eff.org/privacy-badger>Automatic blocking of trackers throughout the web</a></li>
         </ul><br>
+    <figure ><img src=https://i.imgur.com/Cx69wUe.jpg alt="Justy lying in the park." width=500px height=300px>
+	    <figcaption>My favorite picture of my dog, Justy.</figcaption>
+        </figure>
     <h3>Some resources about privacy and coding:</h3>
         <ul><li>An <a href=https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started>Introduction to HTML</a> from the makers of Firefox</li>
 	        <li><a href=https://www.python.org/about/gettingstarted/>Introduction to Python</a>, a high-level programming language that is easy to learn, with simple syntax</li>
@@ -57,11 +65,10 @@
 	        <li><a href=https://privacytoolsio.github.io/privacytools.io/>Information on Internet privacy</a>, hosted on github.com</li>
 	    </ul>   
     <br>
-    <figure ><img src=https://i.imgur.com/Cx69wUe.jpg alt="Justy lying in the park."width=500px height=300px>
-	    <figcaption>My favorite picture of my dog, Justy.</figcaption>
-        </figure>
+
    <br>
    <br>
+<footer>
    <p>For comments, questions, or suggestions, feel free to contact me
 	   <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#121;&#110;&#53;&#49;&#52;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
        		 via email</a> or <a href="https://github.com/jyn514/jyn514.github.io/issues" title="The issue page for this website">through github</a>. 
@@ -71,5 +78,6 @@
 	   For the paranoid, a copy is kept on the <a href="https://github.com/jyn514/jyn514.github.io/" title="Full text of the PGP key">
 	   github page </a>where this site is hosted; this copy is <em>not</em> kept up-to-date.
    </p>
+</footer>
 </body>
 </html>
