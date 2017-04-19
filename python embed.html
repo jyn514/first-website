@@ -6,6 +6,9 @@
     <meta name="author" content="Joshua Nelson">
     <meta name="description" content="An interactive text adventure using an online compiler hosted at repl.it">
 <style type="text/css"> 
+    .tab {
+        display: none;
+    }
 	.embedded {
 	    overflow: auto;
 	    border: 1px dotted black;
@@ -18,18 +21,55 @@
 </head>
 
 <body>
-    <h1>My text adventure</h1>
-    <h3>Steps to play:</h4>
+    <script>
+        function openTab(tab) {
+            var tabs = document.getElementsByClassName("tab")
+            for(i=0; i<tabs.length; i+=1) {
+               tabs[i].style.display = "none";
+            }
+            document.getElementById(tab).style.display = "unset";
+        }
+    </script>
+    <noscript>
+        <p style="font-size: large;">This section of the site requires JavaScript to run. If you are seeing this message, you do not have JS enabled in your browser. You can still view the source code of each application, but in order to run it you will have to download and run the script in a python shell yourself. For more detailed instructions, feel free to <a href="https://jyn514.github.io/website#footer">contact me</a></p> 
+    </noscript>   
+    <h1>Various python applications</h1>
+    <h3>Steps to run:</h3>
     <ol style="font-size: large;">
         <li>Click the 'x' (or press `escape`) to get rid of the annoying pop-up</li>
-        <li>Click `Run` to play the adventure</li>
-        <li>Enjoy! Make sure to submit any and all feedback to <a href="https://github.com/jyn514/text-adventure/issues">the Issues page</a></li>
+        <li>Click `Run` to start the program</li>
+        <li>Enjoy! Make sure to submit any and all feedback to <a href="https://github.com/jyn514/first-website/issues">the Issues page</a></li>
     </ol>
-    <object data=https://repl.it/F6XM/14 class="embedded" style="resize: both;">
-        <embed src=https://repl.it/F6XM/14 class="embedded" style="resize: both;"></embed>
-    Error: Embedded object could not be displayed. If it worked, it would have shown a python applet of my text adventure. Feel free to try it anyway at <a href=https://repl.it/F6XM/14>https://repl.it/F6XM/14</a>.
-    </object>
-<footer>
+    <div class="w3-bar w3-black">
+        <button class="w3-button w3-bar-item" onclick='openTab("adventure")'>Adventure</button>
+        <button class="w3-button w3-bar-item" onclick='openTab("hangman")'>Hangman</button>
+        <button class="w3-button w3-bar-item" onclick='openTab("loan")'>Loan Calculator</button>
+    </div>
+
+    <div class="tab" id="adventure">
+        <h2>My text adventure</h2>
+
+        <object data=https://repl.it/F6XM/14 class="embedded" style="resize: both;">
+            <embed src=https://repl.it/F6XM/14 class="embedded" style="resize: both;"></embed>
+            Error: Embedded object could not be displayed. If it worked, it would have shown a python applet of my text adventure. Feel free to try it anyway at <a href=https://repl.it/F6XM/14>repl.it</a>, an online compiler that requires no downloads.
+        </object>
+    </div>
+    <div class="tab" id="loan">
+        <h2>Loan calculator</h2>
+        <object data=https://repl.it/HPEa/0 class="embedded">
+            <embed src=https://repl.it/HPEa/0 class="embedded"></embed>
+            Error: Embedded object could not be displayed. If it worked, it would have shown a python applet of my text adventure. Feel free to try it anyway at <a href=https://repl.it/HPEa/0>repl.it</a>, an online python compiler that requires no downloads.
+        </object>
+    </div>
+    <div class="tab" id="hangman">
+        <h2>Hangman</h2>
+        <object data=https://repl.it/HORW/0 class="embedded">
+            <embed src=https://repl.it/HORW/0 class="embedded"></embed>
+            Error: Embedded object could not be displayed. If it worked, it would have shown a python applet of hangman. Feel free to try it anyway at <a href=https://repl.it/HORW/0>repl.it</a>, an online python compiler that requires no downloads.
+       </object>
+   </div>
+   
+    <footer>
     <p>This page is embedded from <a href=https://repl.it/F6XM/14>https://repl.it/F6XM/14</a>. If for any reason you prefer, feel free to play the adventure from that page. </p>
     <p><a href="https://jyn514.github.io/website.html" title="main page">Return to main page</a></p>
 </footer>
