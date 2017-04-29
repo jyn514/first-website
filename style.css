@@ -1,0 +1,25 @@
+footer {
+    display: block;
+    height: 30px;
+    width: 100%;
+    font-size: small;
+}
+
+body {
+    background-color: purple;
+    resize: both;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    }
+
+a {
+    color: cyan;
+  }
+
+a:visited {
+    color: white;
+    }
+
+h1 { 
+    float: center;
+   }
