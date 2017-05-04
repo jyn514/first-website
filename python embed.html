@@ -6,7 +6,7 @@
     <meta name="author" content="Joshua Nelson">
     <meta name="description" content="An interactive text adventure using an online compiler hosted at repl.it">
 <style type="text/css"> 
-    .tab {
+    .jstab {
         display: unset;
     }
 	.embedded {
@@ -23,7 +23,7 @@
 <body>
     <script>
         function closeTabs() {
-            tabs = document.getElementsByClassName("tab")
+            tabs = document.getElementsByClassName("jstab")
             for (i=0; i<tabs.length; i+=1) {
                 tabs[i].style.display = "none";
                 }
@@ -62,7 +62,7 @@
         <button onclick='openTab("guessing game")'>Guessing Game</button>
     </div>
 
-    <div class="tab" id="adventure">
+    <div class="jstab" id="adventure">
         <h2>My text adventure</h2>
 
         <object data=https://repl.it/F6XM/latest/168918 class="embedded" style="resize: both;">
@@ -71,7 +71,7 @@
         </object>
         <p>This page is embedded from <a href=https://repl.it/F6XM/latest/168918>repl.it</a>. Feel free to play it there.</p>
     </div>
-    <div class="tab" id="loan">
+    <div class="jstab" id="loan">
         <h2>Loan calculator</h2>
         <object data=https://repl.it/HPEa/latest/168918 class="embedded">
             <embed src=https://repl.it/HPEa/latest/168918 class="embedded"></embed>
@@ -79,7 +79,7 @@
         </object>
         <p>This page is embedded from <a href=https://repl.it/HPEa/latest/168918>repl.it</a>. Feel free to use it there.</p>
     </div>
-    <div class="tab" id="hangman">
+    <div class="jstab" id="hangman">
         <h2>Hangman</h2>
         <object data=https://repl.it/HORW/latest/168918 class="embedded">
             <embed src=https://repl.it/HORW/latest/168918 class="embedded"></embed>
@@ -87,7 +87,7 @@
        </object>
         <p>This page is embedded from <a href="https://repl.it/HORW/latest/168918">repl.it</a>. Feel free to use it there.</p>
     </div>
-    <div class="tab" id="guessing game">
+    <div class="jstab" id="guessing game">
         <h2>Guessing Game</h2>
         <object data=https://repl.it/HOXt/latest/168918 class="embedded">
             <embed src=https://repl.it/HOXt/latest/168918 class="embedded"></embed>
@@ -96,7 +96,21 @@
         <p>This page is embedded from <a href="https://repl.it/HOXt/latest/168918">repl.it</a>. Feel free to use it there.</p>
     </div>
     <script>
-        closeTabs();
+        if (location.hash == "#adventure") {
+            openTab("adventure")
+            }
+        else if (location.hash == "#hangman") {
+            openTab("hangman")
+            }
+        else if (location.hash == "#loan") {
+            openTab("loan")
+            }
+        else if (location.hash == "#guessing game" || location.hash == "#guessing%20game") {
+            openTab("guessing game")
+            }
+        else {
+            closeTabs();
+            }
     </script>
     <footer>
     <p><a href="website.html" title="main page">Return to main page</a></p>
