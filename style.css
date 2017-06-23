@@ -1,27 +1,21 @@
 .tab { margin-left: 2em; }
 
 footer {
+    position: relative;
+    bottom: -15px;
     display: block;
-    height: 30px;
-    width: 100%;
+    height: auto !important;
+    height: 100%;
     font-size: small;
 }
 
 body {
-    background-color: purple;
     resize: both;
-    color: white;
     font-family: Helvetica, sans-serif;
+    background-color: white;
+    color: black;
     }
 
-a {
-    color: cyan;
-  }
-
-a:visited {
-    color: white;
-    }
-
-h1 { 
-    float: center;
-   }
+a { color: blue; }
+a:visited { color: purple; }
+h1 { float: center; }
