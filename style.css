@@ -18,6 +18,12 @@ body {
     padding-bottom: 15px;
     }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
 a { color: blue; }
 a:visited { color: purple; }
 h1 { float: center; }
+
