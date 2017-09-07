@@ -3,14 +3,14 @@
 .social { font-size: xx-small; }
 .social img {
   max-height: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer {
     position: relative;
     top: 50px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     display: block;
     height: auto !important;
     height: 100%;
@@ -22,8 +22,8 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: white;
     color: black;
-    padding-bottom: 15px;
-  padding: 10px;
+    margin-bottom: 15px;
+    margin: 10px;
     }
 
 table, th, td {
