@@ -1,9 +1,16 @@
 .tab { margin-left: 2em; }
 
+.social { font-size: xx-small; }
+.social img {
+  max-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 footer {
     position: relative;
-    top: 15px;
-    bottom: 15px;
+    top: 50px;
+    padding-bottom: 15px;
     display: block;
     height: auto !important;
     height: 100%;
@@ -16,6 +23,7 @@ body {
     background-color: white;
     color: black;
     padding-bottom: 15px;
+  padding: 10px;
     }
 
 table, th, td {
@@ -26,4 +34,3 @@ table, th, td {
 a { color: blue; }
 a:visited { color: purple; }
 h1 { float: center; }
-

@@ -18,12 +18,13 @@
 	    min-height: 200px;
 	    }
 </style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <script>
+        tabs = document.getElementsByClassName("jstab")
         function closeTabs() {
-            tabs = document.getElementsByClassName("jstab")
             for (i=0; i<tabs.length; i+=1) {
                 tabs[i].style.display = "none";
                 }
@@ -33,14 +34,20 @@
             document.getElementById(tab).style.display = "unset";
             }
     </script>
+    <div class="social">
+    <a href="https://github.com/jyn514/" description="My github profile">
+      <img border=0 align=right src="github_favicon.png" alt="github favicon"></a>
+    <a href="https://linkedin.com/in/joshuayn" description="My linkedin profile">
+      <img border=0 align=right src="linkedin-favicon.ico" alt="linkedin favicon"></a>
+  </div>
     <noscript>
-        <p style="font-size: large;">This section of the site requires 
-            JavaScript to run. If you are seeing this message, you do not have 
+        <p style="font-size: large;">This section of the site <a href="http://www.enable-javascript.com/">requires
+            JavaScript</a> to run. If you are seeing this message, you do not have
             JS enabled in your browser. You can still view the source code of 
             each application, but in order to run it you will have to download 
             and run the script in a python shell yourself. Additionally, the 
             tab buttons won't work, although your browser's built in scrollbar 
-            will. </p>
+            will.</p>
         <p>For more detailed instructions, feel free to 
             <a href="https://jyn514.github.io/contact.html">contact me</a> 
             or visit <a href=https://www.python.org/downloads/>the python 
@@ -61,6 +68,7 @@
         <button onclick='openTab("loan")'>Loan Calculator</button>
         <button onclick='openTab("guessing game")'>Guessing Game</button>
     </div>
+<!-- TODO - for all of this divs, add a link to python%20embed.html#footer-->
 
     <div class="jstab" id="adventure">
         <h2>My text adventure</h2>
@@ -113,7 +121,7 @@
             }
     </script>
     <footer>
-    <p><a href="website.html" title="main page">Return to main page</a></p>
+    <p><a href="index.html" title="main page">Return to main page</a></p>
     <p><a href=contact.html>Contact me</a></p>
     <p><a href="resources.html">See a giant list of links</a></p>
     <p><a href="about.html">More about me</a></p>
