@@ -20,21 +20,20 @@
 	    }
 </style>
 <link rel="stylesheet" href="style.css">
+<script>
+  tabs = document.getElementsByClassName("jstab")
+  function closeTabs() {
+  for (i=0; i<tabs.length; i+=1) {
+    tabs[i].style.display = "none";
+  }
+  function openTab(tab) {
+    closeTabs();
+    document.getElementById(tab).style.display = "unset";
+  }
+</script>
 </head>
 
 <body>
-    <script>
-        tabs = document.getElementsByClassName("jstab")
-        function closeTabs() {
-            for (i=0; i<tabs.length; i+=1) {
-                tabs[i].style.display = "none";
-                }
-            }
-        function openTab(tab) {
-            closeTabs();
-            document.getElementById(tab).style.display = "unset";
-            }
-    </script>
     <div class="social">
     <a href="https://github.com/jyn514/" description="My github profile">
       <img border=0 align=right src="images/github_favicon.png" 
