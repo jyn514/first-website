@@ -8,13 +8,9 @@
 }
 
 footer {
-    position: relative;
-    top: 50px;
-    margin-bottom: 15px;
-    display: block;
-    height: auto !important;
-    height: 100%;
-    font-size: small;
+  display: inline;
+  font-size: small;
+  padding-bottom: 1rem;
 }
 
 body {
