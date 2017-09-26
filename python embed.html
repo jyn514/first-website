@@ -20,21 +20,10 @@
 	    }
 </style>
 <link rel="stylesheet" href="style.css">
-<script>
-  tabs = document.getElementsByClassName("jstab")
-  function closeTabs() {
-  for (i=0; i<tabs.length; i+=1) {
-    tabs[i].style.display = "none";
-  }
-  function openTab(tab) {
-    closeTabs();
-    document.getElementById(tab).style.display = "unset";
-  }
-</script>
 </head>
 
 <body>
-    <div class="social">
+  <div class="social">
     <a href="https://github.com/jyn514/" description="My github profile">
       <img border=0 align=right src="images/github_favicon.png" 
 	  alt="github favicon"></a>
@@ -42,95 +31,121 @@
       <img border=0 align=right src="images/linkedin_favicon.ico"
 	  alt="linkedin favicon"></a>
   </div>
-    <noscript>
-        <p style="font-size: large;">This section of the site 
-			<a href="http://www.enable-javascript.com/">requires
-            JavaScript</a> to run. If you are seeing this message, you do not have
-            JS enabled in your browser. You can still view the source code of
-            each application, but in order to run it you will have to download
-            and run the script in a python shell yourself. Additionally, the
-            tab buttons won't work, although your browser's built in scrollbar
-            will.</p>
-        <p>For more detailed instructions, feel free to
-            <a href="contact.html">contact me</a>
-            or visit <a href=https://www.python.org/downloads/>the python
-            website</a>.</p>
-    </noscript>
-    <h1>Various python applications</h1>
-    <h3>Steps to run:</h3>
-    <ol style="font-size: large;">
-        <li>Click the 'x' (or press `escape`) to get rid of the
-            annoying pop-up</li>
-        <li>Click `Run` to start the program</li>
-        <li>Enjoy! Make sure to submit any and all feedback to
-            <a href="https://github.com/jyn514/first-website/issues">
-			the Issues page</a></li>
-    </ol>
-    <div>
-        <button onclick='openTab("adventure")'>Adventure</button>
-        <button onclick='openTab("hangman")'>Hangman</button>
-        <button onclick='openTab("loan")'>Loan Calculator</button>
-        <button onclick='openTab("guessing game")'>Guessing Game</button>
-    </div>
-<!-- TODO - for all of these divs, add a link to python%20embed.html#footer-->
+  <noscript>
+    <p style="font-size: large;">This section of the site
+      <a href="http://www.enable-javascript.com/">requires
+          JavaScript</a> to run. If you are seeing this message, you do not have
+          JS enabled in your browser. You can still view the source code of
+          each application, but in order to run it you will have to download
+          and run the script in a python shell yourself. Additionally, the
+          tab buttons won't work, although your browser's built in scrollbar will.</p>
+    <p>For more detailed instructions, feel free to
+          <a href="contact.html">contact me</a>
+          or visit <a href=https://www.python.org/downloads/>the python website</a>.</p>
+  </noscript>
+  <h1>Various python applications</h1>
+  <h3>Steps to run:</h3>
+  <ol style="font-size: large;">
+      <li>Click the 'x' (or press `escape`) to get rid of the
+          annoying pop-up</li>
+      <li>Click `Run` to start the program</li>
+      <li>Enjoy! Make sure to submit any and all feedback to
+          <a href="https://github.com/jyn514/first-website/issues">
+          the Issues page</a></li>
+  </ol>
+  <div>
+      <button onclick='openTab(adventure)'>Adventure</button>
+      <button onclick='openTab(hangman)'>Hangman</button>
+      <button onclick='openTab(loan)'>Loan Calculator</button>
+      <button onclick='openTab(guess)'>Guessing Game</button>
+  </div>
 
-    <div class="jstab" id="adventure">
-        <h2>My text adventure</h2>
+  <div class="jstab" id="adventure">
+    <h2 style="display: inline;">My text adventure</h2>
+    <span onclick="
+ window.scroll(0,0);">(Top)</span>
+    <br />
 
-        <object data=https://repl.it/F6XM/latest/168918 class="embedded" 
-			style="resize: both;">
-          <embed src=https://repl.it/F6XM/latest/168918 class="embedded" 
-		  style="resize: both;"></embed>
-            Error: Embedded object could not be displayed. If it worked,
-			it would have shown a python applet of my text adventure. 
-			Feel free to try it anyway at <a href=https://repl.it/F6XM/latest/168918>
-			repl.it</a>, an online compiler that requires no downloads.
-        </object>
-		
-        <p>This page is embedded from <a href=https://repl.it/F6XM/latest/168918>
-			repl.it</a>. Feel free to play it there.</p>
-    </div>
-    <div class="jstab" id="loan">
-        <h2>Loan calculator</h2>
-		
-        <object data=https://repl.it/HPEa/latest/168918 class="embedded">
-            <embed src=https://repl.it/HPEa/latest/168918 class="embedded"></embed>
-            Error: Embedded object could not be displayed. If it worked, it would 
-			have shown a python applet of my text adventure. Feel free to try it 
-			anyway at <a href=https://repl.it/HPEa/latest/168918>repl.it</a>,
-			an online python compiler that requires no downloads.
-        </object>
-		
-        <p>This page is embedded from <a href=https://repl.it/HPEa/latest/168918>
-		repl.it</a>. Feel free to use it there.</p>
-		
-    </div>
-    <div class="jstab" id="hangman">
-        <h2>Hangman</h2>
-        <object data=https://repl.it/HORW/latest/168918 class="embedded">
-            <embed src=https://repl.it/HORW/latest/168918 class="embedded"></embed>
-            Error: Embedded object could not be displayed. The website hosting
-			the applet might be down.
-       </object>
-        <p>This page is embedded from <a href="https://repl.it/HORW/latest/168918">
-		repl.it</a>. Feel free to use it there.</p>
-    </div>
-    <div class="jstab" id="guessing game">
-        <h2>Guessing Game</h2>
-        <object data=https://repl.it/HOXt/latest/168918 class="embedded">
-            <embed src=https://repl.it/HOXt/latest/168918 class="embedded"></embed>
-            Error: Embedded object could not be displayed. The website hosting
-			it might be down.
-        </object>
-        <p>This page is embedded from <a href="https://repl.it/HOXt/latest/168918">
-		repl.it</a>. Feel free to use it there.</p>
-    </div>
+      <object data=https://repl.it/F6XM/latest/168918 class="embedded"
+          style="resize: both;">
+        <embed src=https://repl.it/F6XM/latest/168918 class="embedded"
+        style="resize: both;"></embed>
+          Error: Embedded object could not be displayed. If it worked,
+          it would have shown a python applet of my text adventure.
+          Feel free to try it anyway at <a href=https://repl.it/F6XM/latest/168918>
+          repl.it</a>, an online compiler that requires no downloads.
+      </object>
+
+      <p>This page is embedded from <a href=https://repl.it/F6XM/latest/168918>
+          repl.it</a>. Feel free to play it there.</p>
+  </div>
+  <div class="jstab" id="loan">
+    <h2 style="display: inline;">Loan Calculator</h2>
+    <span onclick="
+ window.scroll(0,0);">(Top)</span>
+    <br />
+
+      <object data=https://repl.it/HPEa/latest/168918 class="embedded">
+          <embed src=https://repl.it/HPEa/latest/168918 class="embedded"></embed>
+          Error: Embedded object could not be displayed. If it worked, it would
+          have shown a python applet of my text adventure. Feel free to try it
+          anyway at <a href=https://repl.it/HPEa/latest/168918>repl.it</a>,
+          an online python compiler that requires no downloads.
+      </object>
+
+      <p>This page is embedded from <a href=https://repl.it/HPEa/latest/168918>
+      repl.it</a>. Feel free to use it there.</p>
+
+  </div>
+  <div class="jstab" id="hangman">
+  <h2 style="display: inline;">Hangman</h2>
+    <span onclick="
+ window.scroll(0,0);">(Top)</span>
+    <br />
+      <object data=https://repl.it/HORW/latest/168918 class="embedded">
+          <embed src=https://repl.it/HORW/latest/168918 class="embedded"></embed>
+          Error: Embedded object could not be displayed. The website hosting
+          the applet might be down.
+     </object>
+      <p>This page is embedded from <a href="https://repl.it/HORW/latest/168918">
+      repl.it</a>. Feel free to use it there.</p>
+  </div>
+  <div class="jstab" id="guessing game">
+  <h2 style="display: inline;">Guessing game</h2>
+    <span onclick="
+ window.scroll(0,0);">(Top)</span>
+    <br />
+      <object data=https://repl.it/HOXt/latest/168918 class="embedded">
+          <embed src=https://repl.it/HOXt/latest/168918 class="embedded"></embed>
+          Error: Embedded object could not be displayed. The website hosting
+          it might be down.
+      </object>
+      <p>This page is embedded from <a href="https://repl.it/HOXt/latest/168918">
+      repl.it</a>. Feel free to use it there.</p>
+  </div>
 <script>
-  if (location.hash == "#adventure") { openTab("adventure") }
-  else if (location.hash == "#hangman") { openTab("hangman") }
-  else if (location.hash == "#loan") { openTab("loan") }
+  hangman = document.getElementById("hangman");
+  adventure = document.getElementById("adventure")
+  guess = document.getElementById("guessing game")
+  loan = document.getElementById("loan")
+  tabs = document.getElementsByClassName("jstab")
+
+  function openTab(tab) {
+    closeTabs();
+    tab.style.display = "unset";
+  }
+
+  function closeTabs() {
+    for (i=0; i<tabs.length; i+=1) {
+      tabs[i].style.display = "none"
+    }
+  }
+
+  if (location.hash == "#adventure") { openTab(adventure) }
+  else if (location.hash == "#hangman") { openTab(hangman) }
+  else if (location.hash == "#loan") { openTab(loan) }
   else if (location.hash == "#guessing game" ||
-           location.hash == "#guessing%20game") { openTab("guessing game") }
+           location.hash == "#guessing%20game") { openTab(guess) }
   else { closeTabs(); }
 </script>
 <footer>
