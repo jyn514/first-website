@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="utf-8" />
-  <title>Contact Information</title>
-  <meta name="author" content="Joshua Nelson">
-  <meta name="description" content="Various ways to reach out to me">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="social">
-    <a href="https://github.com/jyn514/" description="My github profile">
-      <img border=0 align=right src="images/github_favicon.png" alt="github favicon"></a>
-    <a href="https://linkedin.com/in/joshuayn" description="My linkedin profile">
-      <img border=0 align=right src="images/linkedin_favicon.ico"
-	  alt="linkedin favicon"></a>
-  </div>
 <h1>Contact Information</h1>
 <div class="main">
   <h2>This site</h2>
@@ -41,19 +24,7 @@
 	title="Link to keyserver. This key is always up to date.">
 	this public keyserver</a>. I also keep a mirror 
 	<a href="https://raw.githubusercontent.com/jyn514/jyn514.github.io/master/PGP%20key.asc"
-	title="Full text of the PGP key">here</a> for the paranoid. 
+	title="Full text of the PGP key">here</a> and <a href="PGP.asc">here</a> for the paranoid. 
 	My key fingerprint is A833 B01B 44BD DA1E E80E  261C E655 823D 8D8B 1088.</p>
 	
 </div>
-
-<footer>
-  Normally, this would show a link to the contact page, but you're already here!
-  <a href="index.html">Return to main page</a>
-  <a href="python%20embed.html">Explore interactive code</a>
-  <a href="resources.html">See a giant list of links</a>
-  <a href="about.html">More about me</a>
-  <a href="programming.html">Learn to program</a>
-  <a href="calendar.html">See when I'm available</a>
-</footer>
-</body>
-</html>

@@ -1,0 +1,149 @@
+<h1>Learn You Some Programming</h1>
+  
+  <div id="programming">
+
+    <p>Programming is an enormous discipline and a comprehensive list of
+    resources would be near-impossible. However, I attempt to address all the
+      most important points - enough to get you started.</p>
+
+    <p>If you know some programming - pretty much anything after hello world -
+      this page is not for you. I recommend
+      <a href="http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard"
+                   description="Discussion of the different stages of learning">
+      this article</a>.</p>
+	
+    <p>The following links are resources for those interested in learning
+    programming or web development. All are meant to be accessible with a bit of
+    reading - please <a href="contact.html">contact me</a> if you think it's
+    badly organized or difficult to read, and I'll find some better
+    resources.</p>
+	
+    <p>You don't need a career in programming to learn it; coding is just as <a
+    href="python%20embed.html#loan">useful in everyday life</a>.</p>
+	
+    <p>The information here is loosely based on <a
+    href="https://developer.mozilla.org/en-US/docs/Learn">the Mozilla intro to
+    web development</a>. I recommend following the order these are listed, but
+    you are of course under no obigation to do so.
+	&nbsp;<span style="font-size: small;"><a href="https://www.mozilla.org">
+	What is Mozilla?</a></span></p>
+
+  <h2 id="language">Choosing a language</h2>
+    <h3>What is a programming language?</h3>
+
+    <h4>Basics</h4><p>Computers, as we all know, understand only `on` and `off`, often stylized as 'zeros and ones'
+      <sup><a href="https://en.wikipedia.org/wiki/Binary_code">[1]</a></sup>.
+    How then can we communicate with them, or do anything at all?
+    A pre-built program, called a 'compiler'
+      <sup><a href="https://en.wikipedia.org/wiki/Compiler">[2]</a></sup>
+    and built by much smarter minds than I, turns logical statements -
+    `Do this; if this condition is true, do that` - into binary code,
+    instructions the computer can understand.</p>
+
+    <h4>Compilers</h4><p>What does this have to do with a language?
+      The language you program in determines what statements you can make -
+      you can only write code that a compiler can recognize and turn into
+      binary statements. If you make a mistake, the compiler will throw an
+      <a href="https://msdn.microsoft.com/ro-ro/library/s9ek7a19(v=vs.80).aspx">
+      error.</a> This can be anything from
+      <a href="images/g_plus_plus_error.png" description="Running `g++` on a binary file">
+      scrolling red text</a> to a simple <a href="images/python_error.png" description="Running programs that don't exist in Python">
+      one-line message</a> to a <a href="images/gradle_error.png" description="Running `gradle test` on an empty class">
+      detailed breakdown</a> of where your program went wrong.</p>
+
+    <h4>Static and Dynamic</h4><p>Although all programs eventually are compiled
+    to binary code, the experience can be very different depending on the language.
+    Dynamic languages<sup><a href="https://stackoverflow.com/questions/787239/what-is-a-dynamic-language-and-why-doesnt-c-sharp-qualify#answer-787253">[3]</a></sup>
+    are more lenient - see <a href="https://www.reddit.com/r/ProgrammerHumor/comments/6xzcgb/is_n_in_javascript/" description="JavaScript is the DEVIL">
+    here</a> for an example. Beginners tend to gravitate towards them because they're quicker
+    to pick up and allow more errors. Static languages are much less forgiving, but also do much
+    more of the work for you.</p>
+
+    <h4>Choosing</h4><p>So, which language should you go with? Well, there are
+    about <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">200</a>
+    in existence, so that's not as easy to answer as it might seem. I recommend
+    <a href="http://www.bestprogramminglanguagefor.me/">this site</a> when first choosing.
+    Don't worry, programming concepts tend to transfer between languages.</p>
+
+    <h2 id="software">Basic <a href="resources.html#libre">Software</a></h2>
+      <p>What software do you need to get started?</p>
+      <ol>
+        <li><h3>A text editor</h3>
+          This is perhaps the most important item here. Formatted text cannot
+		  be parsed by almost any
+          <a href="http://www.webopedia.com/TERM/C/compiler.html">compiler</a>
+		  or browser. For general use, <a href="https://notepad-plus-plus.org">
+		  Notepad++</a> (for Windows) or <a href="https://wiki.gnome.org/Apps/Gedit">
+		  gedit</a> are excellent tools.</li>
+
+        <li><h3>Source control</h3>
+          Source control is a way of keeping track of the changes you make to a document. See
+		  <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control#_about_version_control">
+          the git intro</a> for more info. <a href="https://git-scm.com">Git</a>
+          is one of the most popular versions of source control. You may also wish
+          to upload to the cloud - <a href="https://github.com">GitHub</a> integrates
+          very well with git for this.
+        </li>
+
+        <li><h3>A compiler</h3>
+          This will vary based on your language. Here are some of the most common:
+          <br /><br />
+
+          <table><tr style="font-weight: bold">
+		  <td>Language</td><td>Compiler</td><td>Notes</td></tr>
+
+          <tr><td>Java</td><td><a href="http://openjdk.java.net/">OpenJDK</a></td>
+            <td>As Java is one of the most popular languages, there are many 
+			different compilers. This one is an open-source and widely used.</td></tr>
+
+          <tr><td>Python</td><td><a href="https://www.python.org">Official website</a></td>
+            <td>Python has very different 
+			<a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages)">
+			syntax</a> from most languages. Because of this, it's much easier to
+			learn than most. Python 3 is the 'modern' version, while Python 2 is
+			used in most legacy code. The two, unfortunately, are rarely compatible.</td></tr>
+
+          <tr><td>C#</td><td><a href="http://www.mono-project.com/download/">Mono</a></td>
+            <td>C# is a proprietary language owned by Microsoft. Mono is an 
+			open-source implementation.</td></tr>
+
+          <tr><td>HTML</td><td>Any web browser</td>
+            <td>HTML is not a programming language as such. It is the source code
+			for every webpage on the modern web. Complete pages usually have CSS
+			and JavaScript as well.</td></tr>
+
+          <tr><td>C++</td><td><a href="https://gcc.gnu.org/">GCC</a>
+			</td><td>C++ is the modern version of 
+			<a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>,
+			one of the oldest languages still used and certainly the most influential.
+			As with Java, many different implementations exist.</td></tr>
+
+        </table>
+        </li>
+
+        <li><h3>An introduction!</h3><ul>
+          <li>Intro to <a href="https://git-scm.com/doc">git</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
+				Introduction to HTML</a> from the makers of Firefox</li>
+          <li>Intro to <a href="https://www.python.org/about/gettingstarted/">
+				Python</a>, which I used for <a href="python%20embed.html">
+				the apps</a> in this website.</li>
+          <li>Intro to <a href="https://www.ibm.com/developerworks/java/tutorials/j-introtojava1/index.html">Java</a></li>
+          <li>Intro to <a href="http://www.cprogramming.com/tutorial/lesson1.html">C++</a></li>
+        </ul></li>
+    </ol>
+
+    <h2 id="related">Related resources:</h2>
+    <ul>
+      <li>Reddit's <a href="https://reddit.com/r/programmer">programming community</a></li>
+      <li>A much more comprehensive list of 
+			<a href="http://freeprogrammingresources.com">links</a></li>
+      <li>Python's <a href="https://www.python.org">homepage</a></li>
+      <li>Multi-language <a href="https://repl.it">compiler</a> 
+			that runs in the browser</li>
+      <li><a href="https://automatetheboringstuff.com/">Easy start to programming</a>
+			with Python</li>
+      <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/unit-1/">
+			Harder start to programming</a>, also using Python</li>
+    </ul></li>
+    </ol>
