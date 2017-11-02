@@ -20,7 +20,7 @@ start = \
 	cat src/$(1) >> build/$(1).html;\
 	cat src/template-tail.txt >> build/$(1).html;
 
-targets := index.html interactive.html about.html calendar.html contact.html calendar privacy.html resources.html programming.html
+targets := index.html interactive.html about.html calendar.html contact.html calendar privacy.html resources.html programming.html resume.pdf
 
 clean:
 	rm -f build/*
@@ -63,3 +63,5 @@ programming.html: images styling
 resources.html: images styling
 	$(call start,resources,Resources and Links,Various links to external resources)
 
+resume.pdf:
+	ln -s ../src/Resume.pdf build/resume.pdf
